@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Red Hat Text", sans-serif;
+    background-color: hsl(13, 31%, 94%);
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 1440px;
+}
+.food{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    float: left;
+}
+.buy{
+    width: 30%;
+    float: left;
+    background-color: white;
+    border-radius: 10px ;
+    margin-top: -75px;
+}
+.product_show{
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+    background-size : 100% auto
+}
+.buy h1{
+    font-size: 25px;
+    color: hsl(14, 86%, 42%);
+}
+.buy p{
+    color: hsl(7, 20%, 60%);
+}
+.hidden {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hidden img{
+    width: 30%;
+}
+.hidden p{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.item{
+    width: 30%;
+    padding: 15px;
+}
+h1{
+    font-size: 40px;
+    margin-left: 20px;
+}
+h5{
+    color: gray;
+    margin-bottom: 0;
+}
+h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+
+}
+h4{
+    margin-top: 0;
+    color: hsl(14, 86%, 42%);
+}
+.cart{
+    border: 1px solid hsl(14, 25%, 72%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -23px;
+    background-color: white;
+}
+
+.cart p{
+    margin: 10px;
+}
+.cart .normal {
+    display: flex;
+}
+#waffle{
+    background-image: url(../product-list-with-cart-main/assets/images/image-waffle-desktop.jpg);
+}
+#Crème_Brûlée{
+    background-image: url(../product-list-with-cart-main/assets/images/image-creme-brulee-desktop.jpg);
+}
+#Macaron{
+    background-image: url(../product-list-with-cart-main/assets/images/image-macaron-desktop.jpg);
+}
+#Tiramisu{
+    background-image: url(../product-list-with-cart-main/assets/images/image-tiramisu-desktop.jpg);
+}
+#Baklava{
+    background-image: url(../product-list-with-cart-main/assets/images/image-baklava-desktop.jpg);
+}
+#Pie{
+    background-image: url(../product-list-with-cart-main/assets/images/image-meringue-desktop.jpg);
+}
+#Cake{
+    background-image: url(../product-list-with-cart-main/assets/images/image-cake-desktop.jpg);
+}
+#Brownie{
+    background-image: url(../product-list-with-cart-main/assets/images/image-brownie-desktop.jpg);
+}
+#Panna_Cotta{
+    background-image: url(../product-list-with-cart-main/assets/images/image-panna-cotta-desktop.jpg);
+}
+.clicked{
+    display: none;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(14, 86%, 42%);
+    border-radius: 40px;
+}
+.clicked button{
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+}
+
+.normal:hover {
+    color: hsl(14, 86%, 42%);
+    border-color: hsl(14, 86%, 42%);
+}
+#cart_amount{
+    width: min-content;
+}

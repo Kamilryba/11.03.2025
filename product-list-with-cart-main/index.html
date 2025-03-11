@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="content">
+    <h1>Desserts</h1>
+
+    <section class="food">
+      <article class="item">
+        <section class="product_show" id="waffle">
+
+        </section>
+        <div class="cart" onclick="button_click(1)" id="cart">
+          <section id="normal1" class="normal">
+            <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </section>
+          <section id="clicked1" class="clicked">
+            <button id="minus" onclick="minus(1)">
+              -
+            </button>
+            <p id="count1">0</p>
+            <button id="plus" onclick="plus(1)">
+              +
+            </button>
+
+          </section>
+        </div>
+        <h5>Waffle</h5>
+        <h3>waffle whyth barrys</h3>
+        <h4>$6.50</h4>
+      </article>
+      <article class="item">
+        <section class="product_show" id="Crème_Brûlée">
+
+        </section>
+        <div class="cart" onclick="button_click(2)" id="cart">
+          <section id="normal2" class="normal">
+            <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </section>
+          <section id="clicked2" class="clicked">
+            <button id="minus" onclick="minus(2)">
+              -
+            </button>
+            <p id="count2">0</p>
+            <button id="plus" onclick="plus(2)">
+              +
+            </button>
+
+          </section>
+        </div>
+        <h5>Crème Brûlée</h5>
+        <h3>Vanilla Bean Crème Brûlée</h3>
+        <h4>$7.00</h4>
+      </article>
+      <article class="item">
+        <section class="product_show" id="Macaron">
+
+        </section>
+        <div class="cart" onclick="button_click(3)" id="cart">
+          <section id="normal3" class="normal">
+            <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </section>
+          <section id="clicked3" class="clicked">
+            <button id="minus" onclick="minus(3)">
+              -
+            </button>
+            <p id="count3">0</p>
+            <button id="plus" onclick="plus(3)">
+              +
+            </button>
+
+          </section>
+        </div>
+        <h5>Macaron</h5>
+        <h3>Macaron Mix of Five</h3>
+        <h4>$8.00</h4>
+      </article>
+      <article class="item">
+        <section class="product_show" id="Tiramisu">
+
+        </section>
+        <div class="cart" onclick="button_click(4)" id="cart">
+          <section id="normal4" class="normal">
+            <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </section>
+          <section id="clicked4" class="clicked">
+            <button id="minus" onclick="minus(4)">
+              -
+            </button>
+            <p id="count4">0</p>
+            <button id="plus" onclick="plus(4)">
+              +
+            </button>
+
+          </section>
+        </div>
+        <h5>Tiramisu</h5>
+        <h3>Classic Tiramisu</h3>
+        <h4>$5.50</h4>
+      </article>
+      <article class="item">
+        <section class="product_show" id="Baklava">
+
+        </section>
+        <div class="cart" onclick="button_click(5)" id="cart">
+          <section id="normal5" class="normal">
+            <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </section>
+          <section id="clicked5" class="clicked">
+            <button id="minus" onclick="minus(5)">
+              -
+            </button>
+            <p id="count5">0</p>
+            <button id="plus" onclick="plus(5)">
+              +
+            </button>
+
+          </section>
+        </div>
+        <h5>Baklava</h5>
+        <h3>Pistachio Baklava</h3>
+        <h4>$4.00</h4>
+      </article>
+      <article class="item">
+        <section class="product_show" id="Pie">
+
+        </section>
+        <div class="cart" onclick="button_click(6)" id="cart">
+          <section id="normal6" class="normal">
+            <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </section>
+          <section id="clicked6" class="clicked">
+            <button id="minus" onclick="minus(6)">
+              -
+            </button>
+            <p id="count6">0</p>
+            <button id="plus" onclick="plus(6)">
+              +
+            </button>
+
+          </section>
+        </div>
+        <h5>Pie</h5>
+        <h3>Lemon Meringue Pie</h3>
+        <h4>$5.00</h4>
+      </article>
+      <article class="item">
+        <section class="product_show" id="Cake">
+
+        </section>
+        <div class="cart" onclick="button_click(7)" id="cart">
+          <section id="normal7" class="normal">
+            <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </section>
+          <section id="clicked7" class="clicked">
+            <button id="minus" onclick="minus(7)">
+              -
+            </button>
+            <p id="count7">0</p>
+            <button id="plus" onclick="plus(7)">
+              +
+            </button>
+
+          </section>
+        </div>
+        <h5>Cake</h5>
+        <h3>Red Velvet Cake</h3>
+        <h4>$4.50</h4>
+      </article>
+      <article class="item">
+        <section class="product_show" id="Brownie">
+
+        </section>
+        <div class="cart" onclick="button_click(8)" id="cart">
+          <section id="normal8" class="normal">
+            <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </section>
+          <section id="clicked8" class="clicked">
+            <button id="minus" onclick="minus(8)">
+              -
+            </button>
+            <p id="count8">0</p>
+            <button id="plus" onclick="plus(8)">
+              +
+            </button>
+
+          </section>
+        </div>
+        <h5>Brownie</h5>
+        <h3>Salted Caramel Brownie</h3>
+        <h4>$4.50</h4>
+      </article>
+      <article class="item">
+        <section class="product_show" id="Panna_Cotta">
+
+        </section>
+        <div class="cart" onclick="button_click(9)" id="cart">
+          <section id="normal9" class="normal">
+            <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
+            <p>Add to Cart</p>
+          </section>
+          <section id="clicked9" class="clicked">
+            <button id="minus" onclick="minus(9)">
+              -
+            </button>
+            <p id="count9">0</p>
+            <button id="plus" onclick="plus(9)">
+              +
+            </button>
+
+          </section>
+        </div>
+        <h5>Panna Cotta</h5>
+        <h3>Vanilla Panna Cotta</h3>
+        <h4>$6.50</h4>
+      </article>
+    </section>
+    <section class="buy">
+      <h1 style="display: flex;">Your Cart ( <section id="cart_amount">0</section> ) </h1>
+      <div class="cart">
+
+      </div>
+      <div class="hidden" id="hidden">
+        <img src="../product-list-with-cart-main/assets/images/illustration-empty-cart.svg" alt="">
+        <p>Your added items will appear here</p>
+
+      </div>
+    </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
