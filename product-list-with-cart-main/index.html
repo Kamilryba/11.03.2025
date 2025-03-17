@@ -33,7 +33,7 @@
         <section class="product_show" id="waffle">
 
         </section>
-        <div class="cart" onclick="button_click(1)" id="cart">
+        <div class="cart" onclick="button_click(1)">
           <section id="normal1" class="normal">
             <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
             <p>Add to Cart</p>
@@ -57,7 +57,7 @@
         <section class="product_show" id="Crème_Brûlée">
 
         </section>
-        <div class="cart" onclick="button_click(2)" id="cart">
+        <div class="cart" onclick="button_click(2)">
           <section id="normal2" class="normal">
             <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
             <p>Add to Cart</p>
@@ -81,7 +81,7 @@
         <section class="product_show" id="Macaron">
 
         </section>
-        <div class="cart" onclick="button_click(3)" id="cart">
+        <div class="cart" onclick="button_click(3)">
           <section id="normal3" class="normal">
             <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
             <p>Add to Cart</p>
@@ -105,7 +105,7 @@
         <section class="product_show" id="Tiramisu">
 
         </section>
-        <div class="cart" onclick="button_click(4)" id="cart">
+        <div class="cart" onclick="button_click(4)">
           <section id="normal4" class="normal">
             <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
             <p>Add to Cart</p>
@@ -129,7 +129,7 @@
         <section class="product_show" id="Baklava">
 
         </section>
-        <div class="cart" onclick="button_click(5)" id="cart">
+        <div class="cart" onclick="button_click(5)">
           <section id="normal5" class="normal">
             <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
             <p>Add to Cart</p>
@@ -153,7 +153,7 @@
         <section class="product_show" id="Pie">
 
         </section>
-        <div class="cart" onclick="button_click(6)" id="cart">
+        <div class="cart" onclick="button_click(6)">
           <section id="normal6" class="normal">
             <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
             <p>Add to Cart</p>
@@ -177,7 +177,7 @@
         <section class="product_show" id="Cake">
 
         </section>
-        <div class="cart" onclick="button_click(7)" id="cart">
+        <div class="cart" onclick="button_click(7)">
           <section id="normal7" class="normal">
             <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
             <p>Add to Cart</p>
@@ -201,7 +201,7 @@
         <section class="product_show" id="Brownie">
 
         </section>
-        <div class="cart" onclick="button_click(8)" id="cart">
+        <div class="cart" onclick="button_click(8)">
           <section id="normal8" class="normal">
             <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
             <p>Add to Cart</p>
@@ -225,7 +225,7 @@
         <section class="product_show" id="Panna_Cotta">
 
         </section>
-        <div class="cart" onclick="button_click(9)" id="cart">
+        <div class="cart" onclick="button_click(9)">
           <section id="normal9" class="normal">
             <img src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="">
             <p>Add to Cart</p>
@@ -248,7 +248,7 @@
     </section>
     <section class="buy">
       <h1 style="display: flex;">Your Cart ( <section id="cart_amount">0</section> ) </h1>
-      <div class="cart">
+      <div class="cart_buy" id="cart_buy">
 
       </div>
       <div class="hidden" id="hidden">
@@ -256,9 +256,40 @@
         <p>Your added items will appear here</p>
 
       </div>
+
+      <div class="order-wrapper" id="order-wrapper">
+        <section class="order">
+          <p id="napis">Order Total</p>
+          <p id="kosztotal">$0.00</p>
+        </section>
+        <section class="carbon">
+          This is a <strong>carbon neutral</strong> delivery
+        </section>
+        <section class="confirm_wrapper">
+          <button id="Confirm_Order" onclick="buying()">
+            Confirm Order
+          </button>
+
+        </section>
+      </div>
     </section>
   </section>
-  <script src="script.js"></script>
+  
+
+  <section id="buying_screen">
+    <img src="../product-list-with-cart-main/assets/images/icon-order-confirmed.svg" alt="">
+    <h1>Order Confirmed</h1>
+    <h6>we hope you enjoy your food</h6>
+    <div class="wrap">
+      <div class="cart_buy" id="cart_buy">
+
+      </div>
+      <p class="co">Order Total</p>: <p id="kosztotal">$0.00</p>
+    </div>
+    <button id="Confirm_Order" onclick="reload()">
+      Start new basket
+    </button>
+  </section><script src="script.js"></script>
 </body>
 
 </html>
