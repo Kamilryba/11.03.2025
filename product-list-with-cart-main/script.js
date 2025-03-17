@@ -32,7 +32,7 @@ const itemNames = {
     8: "Salted Caramel Brownie",
     9: "Vanilla Panna Cotta"
 };
-function updateTotalCost() {
+function refreshtotalcost() {
     let totalCost = 0;
     
     cart_stuff.forEach(itemId => {
@@ -41,7 +41,7 @@ function updateTotalCost() {
 
     document.getElementById("kosztotal").innerText = `$${totalCost.toFixed(2)}`;
 }
-function confirm_order() {
+function confirmorder() {
     if (cart_amount > 0) {
         order_confirm.style.display = "flex";
 
@@ -81,7 +81,7 @@ function button_click(button_pressed) {
     normal[button_pressed].style.display = "none";
     clicked[button_pressed].style.display = "flex";
     cartbackground();
-    confirm_order();
+    confirmorder();
     updateBuyingScreenCart();
 }
 
@@ -96,9 +96,9 @@ function plus(button_pressed) {
     cart_counter.innerHTML = cart_amount;
     cartbackground();
 
-    updateCartDisplay(button_pressed);
-    updateTotalCost();
-    confirm_order() ;
+    refreshforcart(button_pressed);
+    refreshtotalcost();
+    confirmorder() ;
     updateBuyingScreenCart();
 }
 
@@ -117,14 +117,14 @@ function minus(button_pressed) {
         cart_counter.innerHTML = cart_amount;
         cartbackground();
 
-        updateCartDisplay(button_pressed);
-        confirm_order()
+        refreshforcart(button_pressed);
+        confirmorder()
         updateBuyingScreenCart();
     }
-    updateTotalCost();
+    refreshtotalcost();
 }
 
-function updateCartDisplay(itemId) {
+function refreshforcart(itemId) {
     const itemCount = cart_stuff.filter(item => item === itemId).length;
     const itemPrice = itemPrices[itemId];
     const itemName = itemNames[itemId];;
@@ -182,7 +182,7 @@ function removeItem(itemId) {
         }
     }
     cartbackground();
-    confirm_order();
+    confirmorder();
     updateBuyingScreenCart();
 }
 function reload(){
